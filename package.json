@@ -1,0 +1,23 @@
+{
+  "name": "study-session-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesPeguero/study-session-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UlisesPeguero/study-session-express/issues"
+  },
+  "homepage": "https://github.com/UlisesPeguero/study-session-express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My test server (public)</h1>
+    <p id="test"></p>
+    <script>
+
+        // getting the <p> element to print the result
+        const result = document.getElementById('test');
+
+        // fetch is a function of JS to request data from API
+        //
+        fetch('http://localhost:8080/tests/dog/cat?myvar3=fox' /*endpoint*/)
+            .then((response) => {
+                response.json().then((data) => {
+                    // data received from server
+                    result.innerHTML = JSON.stringify(data);
+                    console.log(data);
+                });
+            });
+
+    </script>
+</body>
+</html>
